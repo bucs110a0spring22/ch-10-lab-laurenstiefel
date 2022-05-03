@@ -1,5 +1,6 @@
 import pygame
 import random
+
 #model
 class Enemy(pygame.sprite.Sprite):
     def __init__(self, name, x, y, img_file):
@@ -21,4 +22,6 @@ class Enemy(pygame.sprite.Sprite):
         self.speed = 2
 
     def update(self):
-        print("'Update me,' says " + self.name)
+      #print("'Update me,' says " + self.name)
+      self.x_speed = 3*random.random()-1
+      self.y_speed = 3*random.random()-1

@@ -1,8 +1,8 @@
 import sys
 import pygame
 import random
-from src import hero
 from src import enemy
+from src import hero
 
 
 class Controller:
